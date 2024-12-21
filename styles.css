@@ -2,4 +2,90 @@ body {
     background-image: url("images/field.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-image: url("images/card.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.card-body {
+    color: white;
+    text-shadow: 0 0 3px black;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.leo-img {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+#name {
+    position: absolute;
+    top: 380px;
+    left: 110px;
+}
+
+#position {
+    position: absolute;
+    top: 440px;
+    left: 110px;
+}
+
+#number {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#age {
+    position: absolute;
+    top: 480px;
+    left: 110px;
+}
+
+#club {
+    position: absolute;
+    top: 520px;
+    left: 110px;
+}
+
+#pass {
+    position: absolute;
+    top: 440px;
+    left: 260px;    
+}
+
+#shot {
+    position: absolute;
+    top: 480px;
+    left: 260px;    
+}
+
+#speed {
+    position: absolute;
+    top: 520px; 
+    left: 260px;
+}
+
+
