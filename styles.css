@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,8 +16,8 @@ body {
     background-image: url("images/card.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    width: 400px;
+    height: 600px;
     position: relative;
 }
 
@@ -31,61 +32,61 @@ body {
 
 .leo-img {
     position: absolute;
-    top: 100px;
-    left: 150px;
-    width: 200px;
+    top: 90px;
+    left: 120px;
+    width: 180px;
     border-radius: 5px;
     border: 2px solid white;
 }
 
 #name {
     position: absolute;
-    top: 380px;
-    left: 110px;
+    top: 320px;
+    left: 70px;
 }
 
 #position {
     position: absolute;
-    top: 440px;
-    left: 110px;
+    top: 370px;
+    left: 70px;
 }
 
 #number {
     position: absolute;
     top: 40px;
-    left: 60px;
-    font-size: 4em;
+    left: 50px;
+    font-size: 3.5em;
     font-weight: bold;
 }
 
 #age {
     position: absolute;
-    top: 480px;
-    left: 110px;
+    top: 400px;
+    left: 70px;
 }
 
 #club {
     position: absolute;
-    top: 520px;
-    left: 110px;
+    top: 430px;
+    left: 70px;
 }
 
 #pass {
     position: absolute;
-    top: 440px;
-    left: 260px;    
+    top: 370px;
+    left: 230px;    
 }
 
 #shot {
     position: absolute;
-    top: 480px;
-    left: 260px;    
+    top: 400px;
+    left: 230px;    
 }
 
 #speed {
     position: absolute;
-    top: 520px; 
-    left: 260px;
+    top: 430px; 
+    left: 230px;
 }
 
 
