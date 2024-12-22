@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     background-image: url("images/field.jpg");
     background-size: cover;
@@ -7,116 +8,132 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto', sans-serif;
-    display: flex; /* Enable Flexbox on body */
+    display: flex; /* Flexbox for central alignment */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
 
+/* Card container */
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Full width for proper centering */
-    height: 100%; /* Full height to center vertically */
-    margin: 0; /* Remove unnecessary margins */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Adjusted smaller size */
+    padding: 1rem; /* Add padding for spacing */
 }
-
-.card {
-    background-image: url("images/card.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%; /* Use percentage for better responsiveness */
-    height: 80%; /* Use percentage for better responsiveness */
-    aspect-ratio: 4 / 3; /* Maintain aspect ratio */
-    position: relative;
-}
-
-@media (min-width: 470px) {
-    .card-container {
-        width: 100vw; /* Full width for proper centering */
-        height: 100vh; /* Full height to center vertically */
-    }
-    .card {
-        width: 70%; /* Use percentage for better responsiveness */
-        height: 70%; /* Use percentage for better responsiveness */
-        aspect-ratio: 4 / 3; /* Maintain aspect ratio */
-        background-size: contain; /* Ensure the entire image is visible */
-        background-position: center; /* Center the image within the container */
-    }
-}
-
-.card-body {
-    color: white;
-    text-shadow: 3px 3px 2px black;
-    position: relative;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
 
 .leo-img {
     position: absolute;
-    top: 175px;
-    left: 40px;
-    width: 300px;
-    height: 300px;
+    top: 15%; /* Adjust position to fit nicely within the card */
+    left: 15%; /* Center horizontally with a margin */
+    width: 80%; /* Dynamic width for responsiveness */
+    max-width: 200px; /* Set a maximum width to avoid oversizing */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 480px) {
+    .leo-img {
+        top: 20%; /* Adjust position for smaller screens */
+        width: 70%; /* Reduce size for better fit */
+        max-width: 150px; /* Smaller maximum size */
+    }
+}
+
+@media (min-width: 768px) {
+    .leo-img {
+        top: 10%; /* Slightly higher for larger screens */
+        width: 60%; /* Slightly smaller image */
+        max-width: 250px; /* Allow a larger size on bigger screens */
+    }
+}
+
+/* Card styling */
+.card {
+    background-image: url("images/card.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 300px; /* Maximum width for smaller size */
+    aspect-ratio: 2 / 3; /* Maintain aspect ratio */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text to the bottom */
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add shadow for better visual effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    background-blend-mode: multiply; /* Optional: Enhance blending with background image */
+}
+
+/* Text container */
+.card-body {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Individual elements with responsive font sizes */
+.card-body h1 {
+    margin: 0.5rem 0;
+    font-size: clamp(1.2rem, 2vw, 2rem); /* Responsive size */
 }
 
 #number {
-    position: absolute;
-    top: 90px;
-    left: 300px;
-    font-weight: bold;
-}
-
-#rating {
-    position: absolute;
-    top: 70px;
-    left: 20px;
-    font-weight: bold;
-    font-size: 5rem;
+    font-size: clamp(2rem, 2.5vw, 5rem); /* Dynamic number size */
 }
 
 #name {
-    position: absolute;
-    top: 440px;
-    left: 60px;
+    font-size: clamp(1.5rem, 2vw, 12rem);
+    margin-bottom: 1rem;
 }
 
-#position {
-    position: absolute;
-    top: 510px;
-    left: 20px;
+/* Info and Stats sections */
+.info, .stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 0.5rem; /* Add space between items */
+    width: 100%; /* Full width alignment */
+    margin: 0.5rem 0;
 }
 
-
-#age {
-    position: absolute;
-    top: 540px;
-    left: 20px;
+.info p, .stats p {
+    margin: 0;
+    font-size: clamp(0.875rem, 1.2vw, 1rem); /* Responsive text size */
 }
 
-#club {
-    position: absolute;
-    top: 580px;
-    left: 20px;
+/* Adjustments for smaller screens */
+@media (max-width: 480px) {
+    .card-container {
+        padding: 0.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .card {
+        max-width: 90%; /* Fit the card within screen width */
+    }
+
+    .info, .stats {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Align text in the center */
+    }
 }
 
-#pass {
-    position: absolute;
-    top: 510px;
-    left: 270px;   
-}
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .card-container {
+        max-width: 500px; /* Expand card width slightly */
+    }
 
-#shot {
-    position: absolute;
-    top: 540px;
-    left: 270px;    
-}
-
-#speed {
-    position: absolute;
-    top: 580px; 
-    left: 270px;
+    .info, .stats {
+        flex-direction: row; /* Keep items inline */
+    }
 }
