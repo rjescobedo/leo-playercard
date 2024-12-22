@@ -25,8 +25,8 @@ body {
 
 .leo-img {
     position: absolute;
-    top: 15%; /* Adjust position to fit nicely within the card */
-    left: 15%; /* Center horizontally with a margin */
+    top: 10%; /* Adjust position to fit nicely within the card */
+    left: 25%; /* Center horizontally with a margin */
     width: 80%; /* Dynamic width for responsiveness */
     max-width: 200px; /* Set a maximum width to avoid oversizing */
     height: auto; /* Maintain aspect ratio */
@@ -66,7 +66,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add shadow for better visual effect */
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 50% transparency */
     background-blend-mode: multiply; /* Optional: Enhance blending with background image */
 }
 
@@ -83,17 +83,22 @@ body {
 
 /* Individual elements with responsive font sizes */
 .card-body h1 {
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
     font-size: clamp(1.2rem, 2vw, 2rem); /* Responsive size */
 }
 
 #number {
-    font-size: clamp(2rem, 2.5vw, 5rem); /* Dynamic number size */
+    font-size: clamp(1.8rem, 2.5vw, 5rem); /* Dynamic number size */
+    z-index: 1;
 }
 
 #name {
-    font-size: clamp(1.5rem, 2vw, 12rem);
-    margin-bottom: 1rem;
+    font-size: clamp(2rem, 2vw, 12rem);
+    margin-bottom: .5rem;
+}
+
+#position {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
 /* Info and Stats sections */
