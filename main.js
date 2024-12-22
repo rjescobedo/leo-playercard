@@ -1,7 +1,8 @@
 const leo = [
     {
-        name: 'Leonardo Escobedo',
-        position: 'Forward',
+        name: 'Leo Escobedo',
+        position: 'Midfielder',
+        rating: '99',
         number: '27',
         age: '10',
         club: 'HTX',
@@ -21,7 +22,7 @@ leoPosition.innerHTML = `Position: ${leo[0].position}`;
 
 //Number
 const leoNumber = document.getElementById('number');
-leoNumber.innerHTML = leo[0].number;
+leoNumber.innerHTML = `#${leo[0].number}`;
 
 //Age
 const leoAge = document.getElementById('age');
@@ -42,3 +43,7 @@ leoShot.innerHTML = `Shots: ${leo[0].shot}`;
 //Speed
 const leoSpeed = document.getElementById('speed');
 leoSpeed.innerHTML = `Speed: ${leo[0].speed} mph`;
+
+//Rating
+const leoRating = document.getElementById('rating');
+leoRating.innerHTML = leo[0].rating;
