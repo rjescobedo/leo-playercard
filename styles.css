@@ -26,7 +26,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 85%; /* Use percentage for better responsiveness */
+    width: 100%; /* Use percentage for better responsiveness */
     height: 80%; /* Use percentage for better responsiveness */
     aspect-ratio: 4 / 3; /* Maintain aspect ratio */
     position: relative;
@@ -51,72 +51,72 @@ body {
     text-shadow: 3px 3px 2px black;
     position: relative;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
 .leo-img {
     position: absolute;
-    top: 90px;
-    left: 60px;
-    width: 250px;
-    height: 250px;
+    top: 175px;
+    left: 40px;
+    width: 300px;
+    height: 300px;
 }
 
 #number {
     position: absolute;
-    top: 70px;
-    left: 245px;
+    top: 90px;
+    left: 300px;
     font-weight: bold;
 }
 
 #rating {
     position: absolute;
-    top: 30px;
+    top: 70px;
     left: 20px;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 #name {
     position: absolute;
-    top: 315px;
-    left: 55px;
+    top: 440px;
+    left: 60px;
 }
 
 #position {
     position: absolute;
-    top: 360px;
+    top: 510px;
     left: 20px;
 }
 
 
 #age {
     position: absolute;
-    top: 390px;
+    top: 540px;
     left: 20px;
 }
 
 #club {
     position: absolute;
-    top: 420px;
+    top: 580px;
     left: 20px;
 }
 
 #pass {
     position: absolute;
-    top: 360px;
-    left: 190px;   
+    top: 510px;
+    left: 270px;   
 }
 
 #shot {
     position: absolute;
-    top: 390px;
-    left: 190px;    
+    top: 540px;
+    left: 270px;    
 }
 
 #speed {
     position: absolute;
-    top: 420px; 
-    left: 190px;
+    top: 580px; 
+    left: 270px;
 }
